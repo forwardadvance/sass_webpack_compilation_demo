@@ -1,0 +1,23 @@
+{
+  "name": "forward_advance_sass_demo_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -wd",
+    "livereload": "live-server --open=index.html",
+    "dev": "node ./node_modules/concurrently/src/main.js --kill-others \"npm run build\" \"npm run livereload\" "
+  },
+  "author": "Forward Advance",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^2.1.0",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "live-server": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  }
+}
